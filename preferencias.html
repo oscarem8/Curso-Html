@@ -1,0 +1,166 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon2.ico" type="image/x-icon"> <!--favicon icono sobre la pestaña-->
+    <link rel="icon" href="favicon2.ico" type="image/x-icon"> <!--favicon icono sobre la pestaña-->
+    <title>Pollos K&O</title>
+   
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #92a4ff;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            background-color: #FFF;
+        }
+
+        td {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+        }
+
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+            background-color: rgb(162, 162, 162);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+     <header>  <!--barra de navegacion -->
+          <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a class="active" href="preferencias.html">Preferencias</a></li>
+                <li><a href="audiovisuales.html"> Audio Visuales </a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>  
+         </nav>
+
+     </header><!-- fin barra de navegacion -->
+
+<h2 style="margin: 15px; ">Precios de Cortes</h2>
+<hr>
+
+
+<div class="container"><!-- agrupador en bloques inicio de la tabla -->
+    <table>
+        <colgroup><!-- grupo de columnas -->
+               <col style="background-color: antiquewhite;"><!-- col son columnas  y nuemeros de columnas para poder darle estilo a la columna nque quisiera -->
+               <col>
+               <col>
+               <col>
+        </colgroup>
+              <th></th> <!-- se empiezan a crear las filas  -->
+              <th> Precio Bls</th><!-- si queisiera agregar mas filas aqui con th   -->
+              <th>Precio En $</th>
+              
+
+        <tr><!-- si quisiera agregar mas columnas con td dentro de tr -->
+            <td> Pollo Vivo</td>
+            <td>100</td>
+            <td>3</td>
+           
+        </tr>
+
+        <tr><!-- se empiezan a crear columnas -->
+            <td>Recorte Especial</td>
+            <td>160</td>
+            <td>4.5</td>
+
+        </tr><!-- fin de la primera columna -->
+
+        <tr><!-- se empiezan a crear columnas -->
+            <td>Recorte Sencillo</td>
+            <td>100</td>
+            <td>3</td>
+        </tr><!-- fin de la segunda columna -->
+
+        <tr><!-- se empiezan a crear columnas -->
+            <td>Pechuga</td>
+            <td>160</td>
+            <td>4.5</td>
+        </tr><!-- fin de la tercera columna -->
+
+
+        <tr><!-- se empiezan a crear columnas -->
+            <td>Muslo</td>
+            <td>155</td>
+            <td>4.4</td>
+        </tr><!-- fin de lacuarta columna -->
+
+    </table>
+
+</div><!-- agrupador en bloques fin  de la tabla -->
+
+
+
+
+     
+
+<footer class="footer">
+    <p>Derechos Reservado &copy;2024</p>
+</footer>

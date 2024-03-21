@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="favicon2.ico" type="image/x-icon"> <!--favicon icono sobre la pestaña-->
+    <title>Pollos K&O</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 33vw;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <header>  <!--barra de navegacion -->
+        <nav>
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="preferencias.html">Preferencias</a></li>
+              <li><a class="active"  href="audiovisuales.html"> Audio Visuales </a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+          </ul>  
+       </nav>
+
+   </header><!-- fin barra de navegacion -->
+
+      <div class="centrado">
+          <video clas="centrado" src="/assets/videos/video.mp4" autoplay ></video>
+
+      </div>
+   
+      <div class="centrado">
+          <audio class="centrado"  src="/assets/audio/Mi esposa tu  Tony Vega  letras.mp3" autoplay controls muted></audio>
+
+      </div>
+   
+   
+   <section class="centrado">
+       <div class="gallery">
+        <a href="/assets/img/paisaje1.jpg" target="_blank"><img src="/assets/img/paisaje1.jpg" alt=" image1" width="600px"></a>
+           
+               <div class="desc">paisaje1</div>
+        </div>
+        
+        <div class="gallery">
+            <a href="/assets/img/paisaje3.jpg" target="_blank"><img src="/assets/img/paisaje3.jpg" alt=" image3" width="600px"></a>
+            
+               <div class="desc">paisaje2</div>
+         </div>
+
+         
+         <div class="gallery">
+              <a href="/assets/img/paisaje2.jpg"> <img src="/assets/img/paisaje2.jpg" alt=" image2" width="600px"></a>
+           
+              <div class="desc">paisaje3</div>
+         </div>
+
+                    
+     </section>
+               
+
+
+
+
+
+
+   
+
+<footer class="footer">
+  <p>Derechos Reservado &copy;2024</p>
+</footer>
+
+
+
+
+
+
+
+
+</body>
+</html>

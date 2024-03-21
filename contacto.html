@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="favicon2.ico" type="image/x-icon"> <!--favicon icono sobre la pestaña-->
+    <title>Pollos K&O</title>
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div.contenedor-formulario {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    
+    <header>  <!--barra de navegacion -->
+        <nav>
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="preferencias.html">Preferencias</a></li>
+              <li><a href="audiovisuales.html"> Audio Visuales </a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+          </ul>  
+       </nav>
+
+   </header><!-- fin barra de navegacion -->
+
+
+        <div class="contenedor-formulario">
+            <form > 
+                <label  for="nombre" >Nombre</label>
+                <input type="text" id="nombre" placeholder="Escribe Tu Nombre " required>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" placeholder="Escribe Tu Apellido ">
+
+                <label for="Mail">EMail</label>
+                <input type="email"id="Mail" placeholder="Escribe Tu Correo" required>
+
+                <label for="pais">Pais</label>
+                <select name="pais" id="pais">
+                    <option value="venezuela">Venezuela</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="colombia">Colombia</option> 
+                    <option value="ecuador">Ecuador</option>
+
+
+
+
+                </select>
+                
+                <label for="comentario">comentario</label>
+                <textarea name="comentario" id="comentario" placeholder="Escribe Tu Comentario"></textarea>
+                
+                <label for="motivo">Motivo de Contacto</label>
+                 
+                <input type="radio" id="motivo" name="motivo"> <i>reclamos</i>
+                <input type="radio" id="motivo" name="motivo"> <i>Informacion </i>
+                <input type="submit" value="Enviar">
+
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+   
+
+<footer class="footer">
+  <p>Derechos Reservado &copy;2024</p>
+</footer>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
